@@ -1,3 +1,31 @@
+/*
+----------------------------------------------------
+Project Title:
+ESP32 Web Visualization Module for Ultrasonic
+Distance Monitoring System
+
+Microcontroller:
+ESP32 Dev Module
+
+Description:
+This firmware receives distance measurements from
+a PIC16F877A microcontroller via UART, buffers
+recent samples, and hosts a Wi-Fi Access Point
+with a built-in web server that visualizes distance
+data in real time using a dynamic graph.
+
+Features:
+- Wi-Fi SoftAP mode
+- Embedded HTTP server
+- Real-time distance graph
+- Min/Max distance calculation
+- Color-coded danger visualization
+
+Author:
+Anas Hani Abd Allah Almakhamreh
+
+----------------------------------------------------
+*/
 
 #include <WiFi.h>
 #include <WebServer.h>
