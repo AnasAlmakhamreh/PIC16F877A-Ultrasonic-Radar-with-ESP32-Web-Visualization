@@ -1,3 +1,34 @@
+/*
+----------------------------------------------------
+Project Title:
+Ultrasonic Distance Monitoring System with LCD,
+Danger Indicators, UART Transmission, and ESP32
+Web Visualization
+
+Microcontroller:
+PIC16F877A @ 4 MHz Crystal
+
+Course:
+Microprocessors
+
+Description:
+This firmware measures distance using an ultrasonic
+sensor (HC-SR04), displays the measured distance and
+status on a 16x2 LCD, activates LEDs and a buzzer
+based on safety thresholds, and transmits the distance
+value via UART to an ESP32 module for web visualization.
+
+Peripherals Used:
+- Timer1 (pulse width measurement)
+- UART (9600 baud, TX only)
+- GPIO (LCD, ultrasonic sensor, LEDs, buzzer)
+
+Author:
+ * Anas Hani Abd Allah Almakhamreh
+
+----------------------------------------------------
+*/
+
 #include <xc.h>
 #include <stdio.h>
 
@@ -165,3 +196,4 @@ void main(void){
         __delay_ms(150);
     }
 }
+
